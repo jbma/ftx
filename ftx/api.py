@@ -153,8 +153,7 @@ class FtxClient:
     def get_condtional_order_triggered(
             self,
             conditional_order_id: [str]) -> List[dict]:
-        return self._get(
-            '/conditional_orders/{conditional_order_id}/triggers') 
+        return self._get(f'conditional_orders/{conditional_order_id}/triggers') 
 
 
     @authentication_required

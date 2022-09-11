@@ -199,7 +199,7 @@ class FtxClient:
                     reduce_only: bool = False,
                     ioc: bool = False,
                     post_only: bool = False,
-                    client_id: Optional[str] = None -> dict:
+                    client_id: Optional[str] = None,) -> dict:
         return self._post(
             'orders', {
                 'market': market,

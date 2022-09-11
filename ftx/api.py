@@ -150,7 +150,7 @@ class FtxClient:
                 'end_time': end_time
             })
     @authentication_required
-    def get_condtional_order_triggered(
+    def get_conditional_order_triggered(
             self,
             conditional_order_id: [str]) -> List[dict]:
         return self._get(f'conditional_orders/{conditional_order_id}/triggers') 
